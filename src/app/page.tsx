@@ -3,91 +3,139 @@ import VideoPlayer from "@/components/VideoPlayer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-cream overflow-x-hidden">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-white/98 backdrop-blur-md shadow-lg z-50 border-b-2 border-gold/30">
-        <nav className="container mx-auto px-6 py-4 flex items-center justify-between relative">
-          <a href="#" className="flex items-center gap-4 relative group transition-transform duration-300 hover:scale-105">
-            <div className="absolute -top-4 left-0 shadow-2xl z-50">
+      <header className="fixed top-0 w-full bg-white/98 backdrop-blur-md shadow-lg z-50 border-b-2 border-gold/30 overflow-hidden">
+        <nav className="container mx-auto px-4 md:px-6 py-3 md:py-4 max-w-full">
+          {/* Mobile Layout - Logo and Button */}
+          <div className="flex items-center justify-between gap-2 md:hidden">
+            <a href="#" className="flex items-center gap-2 flex-shrink min-w-0">
               <Image
                 src="/logo.jpeg"
                 alt="Psychologos"
-                width={100}
-                height={100}
-                className="relative"
+                width={40}
+                height={40}
+                className="rounded-lg flex-shrink-0"
               />
-            </div>
-            <div className="flex flex-col ml-28">
-              <span className="text-3xl font-bold text-emerald-dark tracking-tight">
-                Psychologos
-              </span>
-              <span className="text-xs text-gold font-semibold tracking-widest">
-                გამაჯანსაღებელი კურსი
-              </span>
-            </div>
-          </a>
-          <div className="flex items-center gap-8">
-            <div className="hidden md:flex items-center gap-6">
-              <a
-                href="#about"
-                className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
-              >
-                კურსის შესახებ
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
-              </a>
-              <a
-                href="#course"
-                className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
-              >
-                ვისთვის არის
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
-              </a>
-              <a
-                href="#results"
-                className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
-              >
-                შედეგები
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
-              </a>
-              <a
-                href="#packages"
-                className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
-              >
-                პაკეტები
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
-              </a>
-            </div>
+              <div className="flex flex-col min-w-0">
+                <span className="text-sm font-bold text-emerald-dark truncate">
+                  Psychologos
+                </span>
+                <span className="text-[9px] text-gold font-semibold truncate">
+                  გამაჯანსაღებელი კურსი
+                </span>
+              </div>
+            </a>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-emerald-dark to-emerald-medium text-white px-10 py-4 rounded-full hover:shadow-2xl transition-all font-bold text-sm uppercase tracking-wide transform hover:scale-105"
+              className="bg-gradient-to-r from-emerald-dark to-emerald-medium text-white px-3 py-1.5 rounded-full hover:shadow-xl transition-all font-bold text-[10px] whitespace-nowrap flex-shrink-0"
             >
               რეგისტრაცია
             </a>
+          </div>
+
+          {/* Mobile Navigation Links */}
+          <div className="md:hidden mt-2 flex justify-around border-t border-gold/20 pt-2 gap-1">
+            <a href="#about" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+              შესახებ
+            </a>
+            <a href="#course" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+              ვისთვის
+            </a>
+            <a href="#results" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+              შედეგები
+            </a>
+            <a href="#packages" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+              პაკეტები
+            </a>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden md:flex items-center justify-between relative">
+            <a href="#" className="flex items-center gap-4 relative group transition-transform duration-300 hover:scale-105">
+              <div className="absolute -top-4 left-0 shadow-2xl z-50">
+                <Image
+                  src="/logo.jpeg"
+                  alt="Psychologos"
+                  width={100}
+                  height={100}
+                  className="relative"
+                />
+              </div>
+              <div className="flex flex-col ml-28">
+                <span className="text-3xl font-bold text-emerald-dark tracking-tight">
+                  Psychologos
+                </span>
+                <span className="text-xs text-gold font-semibold tracking-widest">
+                  გამაჯანსაღებელი კურსი
+                </span>
+              </div>
+            </a>
+            <div className="flex items-center gap-8">
+              <div className="flex items-center gap-6">
+                <a
+                  href="#about"
+                  className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
+                >
+                  კურსის შესახებ
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
+                </a>
+                <a
+                  href="#course"
+                  className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
+                >
+                  ვისთვის არის
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
+                </a>
+                <a
+                  href="#results"
+                  className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
+                >
+                  შედეგები
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
+                </a>
+                <a
+                  href="#packages"
+                  className="relative text-emerald-dark font-semibold group transition-colors hover:text-emerald-medium"
+                >
+                  პაკეტები
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gold via-gold-light to-emerald-medium group-hover:w-full transition-all duration-300 ease-out"></span>
+                </a>
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-emerald-dark to-emerald-medium text-white px-10 py-4 rounded-full hover:shadow-2xl transition-all font-bold text-sm uppercase tracking-wide transform hover:scale-105"
+              >
+                რეგისტრაცია
+              </a>
+            </div>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-6 relative overflow-hidden bg-cream">
+      <section className="pt-28 md:pt-32 pb-12 md:pb-24 px-4 md:px-6 relative overflow-hidden bg-cream">
         <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6 animate-slide-in-left">
-              <p className="text-sm uppercase tracking-wider text-emerald-medium font-semibold">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="space-y-4 md:space-y-6 animate-slide-in-left">
+              <p className="text-sm md:text-base lg:text-lg uppercase tracking-wider text-emerald-medium font-semibold">
                 გამაჯანსაღებელი კურსი
               </p>
-              <h1 className="text-5xl lg:text-6xl font-bold text-emerald-dark leading-tight">
+              <h1 className="text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-emerald-dark">
                 აღიდგინე ჯანმრთელობა
                 <br />
                 <span className="text-emerald-medium">40 დღეში!</span>
               </h1>
-              <div className="space-y-4">
-                <p className="text-xl text-gray-700 leading-relaxed">
+              <div className="space-y-3 md:space-y-4">
+                <p className="text-base md:text-xl lg:text-2xl text-gray-700 leading-relaxed">
                   არ დაელოდო უკეთეს მომავალს — შენი სხეული და გონება უკვე ფლობს
                   განკურნების ძალას.
                 </p>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-sm md:text-lg lg:text-xl text-gray-600 leading-relaxed">
                   გაიგე როგორ აამუშაო შენი ბუნებრივი თვითგანკურნების მექანიზმი
                   პრაქტიკული, შედეგზე ორიენტირებული მეთოდით.
                 </p>
@@ -97,14 +145,14 @@ export default function Home() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-emerald-dark text-white px-8 py-4 rounded-full hover:bg-emerald-medium transition-all font-semibold hover-lift"
+                  className="inline-block bg-emerald-dark text-white px-8 md:px-10 lg:px-12 py-3 md:py-4 lg:py-5 rounded-full hover:bg-emerald-medium transition-all font-semibold text-base md:text-lg lg:text-xl hover-lift"
                 >
                   რეგისტრაცია
                 </a>
               </div>
             </div>
-            <div className="relative animate-slide-in-right">
-              <div className="relative rounded-full overflow-hidden shadow-2xl border-8 border-white max-w-md mx-auto animate-scale-in delay-200">
+            <div className="relative animate-slide-in-right mt-8 lg:mt-0">
+              <div className="relative rounded-full overflow-hidden shadow-2xl border-4 md:border-8 border-white max-w-sm md:max-w-md mx-auto animate-scale-in delay-200">
                 <Image
                   src="/mainposter.jpeg"
                   alt="გამაჯანსაღებელი კურსი"
@@ -114,13 +162,13 @@ export default function Home() {
                 />
               </div>
               {/* Stats */}
-              <div className="absolute -right-4 top-12 bg-white rounded-2xl shadow-xl p-6 text-center animate-fade-in-up delay-300 hover-lift">
-                <div className="text-4xl font-bold text-emerald-dark">10მ+</div>
-                <div className="text-sm text-gray-600">კურსდამთავრებული</div>
+              <div className="absolute right-2 md:-right-4 top-6 md:top-12 bg-gradient-to-br from-white to-cream rounded-2xl md:rounded-2xl shadow-2xl p-4 md:p-6 text-center animate-fade-in-up delay-300 hover-lift border-2 border-gold/30">
+                <div className="text-3xl md:text-4xl font-black text-emerald-dark">10მ+</div>
+                <div className="text-xs md:text-sm text-gray-600 font-semibold">კურსდამთავრებული</div>
               </div>
-              <div className="absolute -left-4 bottom-12 bg-white rounded-2xl shadow-xl p-6 text-center animate-fade-in-up delay-400 hover-lift">
-                <div className="text-4xl font-bold text-emerald-dark">40</div>
-                <div className="text-sm text-gray-600">დღიანი პროგრამა</div>
+              <div className="absolute left-2 md:-left-4 bottom-6 md:bottom-12 bg-gradient-to-br from-white to-cream rounded-2xl md:rounded-2xl shadow-2xl p-4 md:p-6 text-center animate-fade-in-up delay-400 hover-lift border-2 border-gold/30">
+                <div className="text-3xl md:text-4xl font-black text-emerald-dark">40</div>
+                <div className="text-xs md:text-sm text-gray-600 font-semibold">დღიანი პროგრამა</div>
               </div>
             </div>
           </div>
@@ -131,7 +179,7 @@ export default function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-emerald-dark leading-tight max-w-4xl mx-auto mb-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-emerald-dark leading-tight max-w-4xl mx-auto mb-6">
               ამ მეთოდის მეშვეობოთ 10 მილიონზე მეტმა ადამიანმა აღიდგინა
               ჯანმრთელობა მთელს მსოფლიოში.
             </h2>
@@ -168,7 +216,7 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-12">
             <div className="space-y-6">
-              <h2 className="text-5xl lg:text-7xl font-black mb-4 leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-7xl font-black mb-4 leading-tight">
                 ადგილების რაოდენობა
                 <br />
                 <span className="text-gold">შეზღუდულია</span>
@@ -223,7 +271,7 @@ export default function Home() {
           {/* Header */}
           <div className="text-center mb-20 animate-fade-in-up">
             <p className="text-gold text-sm uppercase tracking-widest mb-4 font-semibold">სისტემის საფუძველი</p>
-            <h2 className="text-5xl lg:text-6xl font-black mb-8 leading-tight">
+            <h2 className="text-2xl md:text-4xl lg:text-6xl font-black mb-8 leading-tight">
               რატომ „გამაჯანსაღებელი კურსი"?
             </h2>
             <div className="w-32 h-1 bg-gold mx-auto mb-8"></div>
