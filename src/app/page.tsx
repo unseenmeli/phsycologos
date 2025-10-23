@@ -903,7 +903,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
+                  href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit" target="_blank" rel="noopener noreferrer"
                   className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-4 rounded-full font-semibold transition-all"
                 >
                   დარეგისტრირდი მასტერკლასზე
@@ -1017,13 +1017,12 @@ export default function Home() {
           <div className="text-center space-y-6">
             <div className="flex items-center justify-center gap-3">
               <Image
-                src="/logo.jpeg"
-                alt="Psychologos"
-                width={50}
-                height={50}
+                src="/mandala_transparent.png"
+                alt="Mandala"
+                width={80}
+                height={80}
                 className="relative"
               />
-              <span className="text-2xl font-bold text-white">Psychologos</span>
             </div>
             <p className="text-gold/80 text-lg">გამაჯანსაღებელი კურსი</p>
             <div className="pt-6 border-t border-white/10">
