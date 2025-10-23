@@ -1,12 +1,13 @@
 import Image from "next/image";
 import VideoPlayer from "@/components/VideoPlayer";
+import ScrollAnimation from "@/components/ScrollAnimation";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-cream overflow-x-hidden">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-white/98 backdrop-blur-md shadow-lg z-50 border-b-2 border-gold/30 overflow-hidden">
-        <nav className="container mx-auto px-4 md:px-6 py-3 md:py-4 max-w-full">
+      <header className="fixed top-0 w-full bg-white/98 backdrop-blur-md shadow-lg z-50 border-b-2 border-gold/30">
+        <nav className="container mx-auto px-4 md:px-6 py-3 md:py-4 max-w-full overflow-visible">
           {/* Mobile Layout - Logo and Button */}
           <div className="flex items-center justify-between gap-2 md:hidden">
             <a href="#" className="flex items-center gap-2 flex-shrink min-w-0">
@@ -178,35 +179,43 @@ export default function Home() {
       {/* Stats */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-emerald-dark leading-tight max-w-4xl mx-auto mb-6">
-              ამ მეთოდის მეშვეობოთ 10 მილიონზე მეტმა ადამიანმა აღიდგინა
-              ჯანმრთელობა მთელს მსოფლიოში.
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              ნორბეკოვის მეთოდი - ასე ეწოდება ფსიქო სომატიკური თვითაღდგენის
-              სისტემას, რომლის ბაზაზეც დაფუძნებულია ჩვენი გამაჯანსაღებელი კურსი.
-            </p>
-          </div>
+          <ScrollAnimation animation="fade">
+            <div className="text-center mb-12">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-emerald-dark leading-tight max-w-4xl mx-auto mb-6">
+                ამ მეთოდის მეშვეობოთ 10 მილიონზე მეტმა ადამიანმა აღიდგინა
+                ჯანმრთელობა მთელს მსოფლიოში.
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                ნორბეკოვის მეთოდი - ასე ეწოდება ფსიქო სომატიკური თვითაღდგენის
+                სისტემას, რომლის ბაზაზეც დაფუძნებულია ჩვენი გამაჯანსაღებელი კურსი.
+              </p>
+            </div>
+          </ScrollAnimation>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center p-8 bg-cream rounded-2xl hover-lift animate-fade-in-up">
-              <div className="text-5xl font-bold text-emerald-dark mb-2">
-                10მ+
+            <ScrollAnimation animation="scale">
+              <div className="text-center p-8 bg-cream rounded-2xl hover-lift">
+                <div className="text-5xl font-bold text-emerald-dark mb-2">
+                  10მ+
+                </div>
+                <div className="text-gray-600">კურსდამთავრებული მსოფლიოში</div>
               </div>
-              <div className="text-gray-600">კურსდამთავრებული მსოფლიოში</div>
-            </div>
-            <div className="text-center p-8 bg-cream rounded-2xl hover-lift animate-fade-in-up delay-100">
-              <div className="text-5xl font-bold text-emerald-dark mb-2">
-                20+
+            </ScrollAnimation>
+            <ScrollAnimation animation="scale">
+              <div className="text-center p-8 bg-cream rounded-2xl hover-lift">
+                <div className="text-5xl font-bold text-emerald-dark mb-2">
+                  20+
+                </div>
+                <div className="text-gray-600">წლიანი გამოცდილება</div>
               </div>
-              <div className="text-gray-600">წლიანი გამოცდილება</div>
-            </div>
-            <div className="text-center p-8 bg-cream rounded-2xl hover-lift animate-fade-in-up delay-200">
-              <div className="text-5xl font-bold text-emerald-dark mb-2">
-                40
+            </ScrollAnimation>
+            <ScrollAnimation animation="scale">
+              <div className="text-center p-8 bg-cream rounded-2xl hover-lift">
+                <div className="text-5xl font-bold text-emerald-dark mb-2">
+                  40
+                </div>
+                <div className="text-gray-600">ენაზე ნათარგმნი</div>
               </div>
-              <div className="text-gray-600">ენაზე ნათარგმნი</div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -215,16 +224,18 @@ export default function Home() {
       <section className="py-32 px-6 bg-gradient-to-br from-emerald-dark via-emerald-medium to-emerald-dark text-white relative overflow-hidden">
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-12">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-5xl lg:text-7xl font-black mb-4 leading-tight">
-                ადგილების რაოდენობა
-                <br />
-                <span className="text-gold">შეზღუდულია</span>
-              </h2>
-              <p className="text-2xl lg:text-3xl font-light max-w-3xl mx-auto leading-relaxed">
-                გამოიყენე შანსი, დაიწყე შენი გაჯანსაღება დღესვე!
-              </p>
-            </div>
+            <ScrollAnimation animation="fade">
+              <div className="space-y-6">
+                <h2 className="text-3xl md:text-5xl lg:text-7xl font-black mb-4 leading-tight">
+                  ადგილების რაოდენობა
+                  <br />
+                  <span className="text-gold">შეზღუდულია</span>
+                </h2>
+                <p className="text-2xl lg:text-3xl font-light max-w-3xl mx-auto leading-relaxed">
+                  გამოიყენე შანსი, დაიწყე შენი გაჯანსაღება დღესვე!
+                </p>
+              </div>
+            </ScrollAnimation>
             <div className="pt-8">
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
@@ -239,18 +250,22 @@ export default function Home() {
               </a>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto py-8">
-              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-gold/30 hover:border-gold transition-all transform hover:scale-105 shadow-2xl">
-                <div className="text-gold font-bold text-sm uppercase tracking-widest mb-2">
-                  თარიღი
+              <ScrollAnimation animation="left">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-gold/30 hover:border-gold transition-all transform hover:scale-105 shadow-2xl">
+                  <div className="text-gold font-bold text-sm uppercase tracking-widest mb-2">
+                    თარიღი
+                  </div>
+                  <div className="text-3xl font-black">10 ნოემბერი</div>
                 </div>
-                <div className="text-3xl font-black">10 ნოემბერი</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-gold/30 hover:border-gold transition-all transform hover:scale-105 shadow-2xl">
-                <div className="text-gold font-bold text-sm uppercase tracking-widest mb-2">
-                  მისამართი
+              </ScrollAnimation>
+              <ScrollAnimation animation="right">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-gold/30 hover:border-gold transition-all transform hover:scale-105 shadow-2xl">
+                  <div className="text-gold font-bold text-sm uppercase tracking-widest mb-2">
+                    მისამართი
+                  </div>
+                  <div className="text-2xl font-black">სულხან ნასიძის 20</div>
                 </div>
-                <div className="text-2xl font-black">სულხან ნასიძის 20</div>
-              </div>
+              </ScrollAnimation>
             </div>
             <p className="text-2xl font-light">
               მოგესალმებით, გეპატიჟებით, ჩაერთეთ!
@@ -381,23 +396,28 @@ export default function Home() {
       {/* Norbekov Section */}
       <section className="py-20 px-6 bg-cream">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-emerald-dark mb-4">
-              ვინ არის მირზაკარიმ ნორბეკოვი და რას მოიცავს მისი მეთოდი?
-            </h2>
-            <div className="w-24 h-1 bg-gold mx-auto"></div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
-              <Image
-                src="/norbekov.jpg"
-                alt="მირზაკარიმ ნორბეკოვი"
-                width={600}
-                height={600}
-                className="object-cover w-full h-full aspect-square"
-              />
+          <ScrollAnimation animation="fade">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-emerald-dark mb-4">
+                ვინ არის მირზაკარიმ ნორბეკოვი და რას მოიცავს მისი მეთოდი?
+              </h2>
+              <div className="w-24 h-1 bg-gold mx-auto"></div>
             </div>
-            <div className="space-y-4 text-gray-700">
+          </ScrollAnimation>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <ScrollAnimation animation="left">
+              <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/norbekov.jpg"
+                  alt="მირზაკარიმ ნორბეკოვი"
+                  width={600}
+                  height={600}
+                  className="object-cover w-full h-full aspect-square"
+                />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="right">
+              <div className="space-y-4 text-gray-700">
               <p>
                 აკადემიკოსი მირზაკარიმ ნორბეკოვი დღესდღეობით რამდენიმე
                 მიმართულებითაა ცნობილი. პირველ რიგში, ის ფსიქოსომატიკური
@@ -423,7 +443,8 @@ export default function Home() {
                 ამ წიგნის ტირაჟი დღეს 40 მილიონია და ნათარგმნია, ფაქტობრივად,
                 მსოფლიოს ყველა ენაზე, მათ შორის, ქართულად.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -432,7 +453,8 @@ export default function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-4 text-gray-700">
+            <ScrollAnimation animation="left">
+              <div className="space-y-4 text-gray-700">
               <p>
                 <span className="font-bold">ხათუნა მუზაშვილი</span> - ფსიქოლოგი,
                 ნლპ პრაქტიკოსი, არტ თერაპევტი, სხეულზე ორიენტირებული თერაპიის
@@ -450,16 +472,19 @@ export default function Home() {
                 საქართველოში ასევე მის ფარგლებს გარეთ და უამრავ ადამიანს
                 ეხმარება ცხოვრების ბალანსის აღდგენასა და გამოჯანმრთელებაში.
               </p>
-            </div>
-            <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
-              <Image
-                src="/xatunamuzashvili.jpeg"
-                alt="ხათუნა მუზაშვილი"
-                width={600}
-                height={600}
-                className="object-cover w-full h-full aspect-square"
-              />
-            </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="right">
+              <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                <Image
+                  src="/xatunamuzashvili.jpeg"
+                  alt="ხათუნა მუზაშვილი"
+                  width={600}
+                  height={600}
+                  className="object-cover w-full h-full aspect-square"
+                />
+              </div>
+            </ScrollAnimation>
           </div>
           <div className="text-center mt-12">
             <a
@@ -883,11 +908,6 @@ export default function Home() {
                 >
                   დარეგისტრირდი მასტერკლასზე
                 </a>
-              </div>
-              <div className="mt-6 bg-cream rounded-xl p-4 text-center">
-                <p className="text-emerald-dark font-semibold text-sm">
-                  აქ ჩავსვათ პოსტერი
-                </p>
               </div>
             </div>
 
