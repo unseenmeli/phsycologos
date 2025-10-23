@@ -162,13 +162,13 @@ export default function Home() {
                 />
               </div>
               {/* Stats */}
-              <div className="absolute right-2 md:-right-4 top-6 md:top-12 bg-gradient-to-br from-white to-cream rounded-2xl md:rounded-2xl shadow-2xl p-4 md:p-6 text-center animate-fade-in-up delay-300 hover-lift border-2 border-gold/30">
-                <div className="text-3xl md:text-4xl font-black text-emerald-dark">10მ+</div>
-                <div className="text-xs md:text-sm text-gray-600 font-semibold">კურსდამთავრებული</div>
+              <div className="absolute -top-4 right-4 md:right-2 lg:-right-4 md:top-6 lg:top-12 bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-3 md:p-4 lg:p-6 text-center animate-fade-in-up delay-300 hover-lift border-2 border-white/60">
+                <div className="text-lg md:text-2xl lg:text-3xl font-black text-emerald-dark leading-tight">10 000 000+</div>
+                <div className="text-[10px] md:text-xs lg:text-sm text-gray-600 font-semibold mt-1">კურსდამთავრებული</div>
               </div>
-              <div className="absolute left-2 md:-left-4 bottom-6 md:bottom-12 bg-gradient-to-br from-white to-cream rounded-2xl md:rounded-2xl shadow-2xl p-4 md:p-6 text-center animate-fade-in-up delay-400 hover-lift border-2 border-gold/30">
-                <div className="text-3xl md:text-4xl font-black text-emerald-dark">40</div>
-                <div className="text-xs md:text-sm text-gray-600 font-semibold">დღიანი პროგრამა</div>
+              <div className="absolute -bottom-4 left-4 md:left-2 lg:-left-4 md:bottom-6 lg:bottom-12 bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-2 md:p-4 lg:p-6 text-center animate-fade-in-up delay-400 hover-lift border-2 border-white/60">
+                <div className="text-xl md:text-3xl lg:text-4xl font-black text-emerald-dark leading-none">40</div>
+                <div className="text-[9px] md:text-xs lg:text-sm text-gray-600 font-semibold mt-0.5 md:mt-1">დღიანი პროგრამა</div>
               </div>
             </div>
           </div>
@@ -451,11 +451,13 @@ export default function Home() {
                 ეხმარება ცხოვრების ბალანსის აღდგენასა და გამოჯანმრთელებაში.
               </p>
             </div>
-            <div className="bg-emerald-medium/10 rounded-3xl aspect-video flex items-center justify-center overflow-hidden">
-              <VideoPlayer
-                src="/lightgreen.mp4"
-                className="w-full h-full object-cover [&:fullscreen]:object-contain"
-                style={{ objectPosition: "50% 20%" }}
+            <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
+              <Image
+                src="/xatunamuzashvili.jpeg"
+                alt="ხათუნა მუზაშვილი"
+                width={600}
+                height={600}
+                className="object-cover w-full h-full aspect-square"
               />
             </div>
           </div>
@@ -489,9 +491,9 @@ export default function Home() {
           </div>
 
           {/* Testimonial Style Gallery */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="relative group rounded-3xl overflow-hidden shadow-xl hover-lift">
-              <Image src="/IMG_4929.jpg" alt="ჯგუფური პრაქტიკა" width={600} height={400} className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+              <Image src="/IMG_4929.jpg" alt="ჯგუფური პრაქტიკა" width={600} height={400} className="w-full h-80 object-cover transition-transform duration-700 scale-150" style={{ objectPosition: "70% 60%" }} />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark via-emerald-dark/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="text-white text-2xl font-bold mb-2">ჯგუფური პრაქტიკა</h3>
@@ -510,15 +512,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Small gallery strip */}
-          <div className="flex gap-4 mb-12 overflow-hidden">
-            <div className="flex-1 rounded-2xl overflow-hidden shadow-lg hover-lift group">
-              <Image src="/IMG_6642.jpg" alt="აუდიტორია" width={400} height={300} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-            </div>
-            <div className="flex-1 rounded-2xl overflow-hidden shadow-lg hover-lift group">
-              <Image src="/IMG_9567.jpg" alt="სწავლება" width={400} height={300} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-            </div>
-          </div>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               "თუ გრძნობ, რომ მზად ხარ ახალი გააზრებული ცხოვრება დაიწყო, სადაც შენ იქნები შენი ჯანმრთელობის, ემოციების და აზრების მმართველი, ეს კურსი შენთვისაა",
@@ -567,7 +560,6 @@ export default function Home() {
               "მეტად შეიყვარებთ საკუთარ თავს და ორგანიზმს, რომელიც წლებია თქვენ სიცოცხლეს ემსახურება",
               "მოიშორებთ შიშებს და კომპლექსებს, რომლებიც თავისუფოლებას გიზღუდავთ",
               "დაიბრუნებთ სიხარულისა და ცხოვრებით ტკბობის განცდას",
-              "შეძლებთ მართოთ თქვენი დადებითი და უარყოფითი ემოციები",
             ].map((item, index) => (
               <div key={index} className="p-6 bg-cream rounded-xl">
                 <p className="flex items-start gap-3 text-gray-700">
@@ -609,16 +601,14 @@ export default function Home() {
           </div>
           <div className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
-                <Image
-                  src="/xatunamuzashvili.jpeg"
-                  alt="ხათუნა მუზაშვილი"
-                  width={600}
-                  height={600}
-                  className="object-cover w-full h-full aspect-square"
+              <div className="bg-emerald-medium/10 rounded-3xl aspect-video flex items-center justify-center overflow-hidden">
+                <VideoPlayer
+                  src="/lightgreen.mp4"
+                  className="w-full h-full object-cover [&:fullscreen]:object-contain"
+                  style={{ objectPosition: "50% 20%" }}
                 />
               </div>
-              <div className="bg-emerald-medium/10 rounded-3xl aspect-square flex items-center justify-center overflow-hidden">
+              <div className="bg-emerald-medium/10 rounded-3xl aspect-video flex items-center justify-center overflow-hidden">
                 <video
                   className="w-full h-full object-cover [&:fullscreen]:object-contain"
                   style={{ objectPosition: "50% 20%" }}
@@ -757,11 +747,10 @@ export default function Home() {
               "უნაყოფობა",
               "მასტოპათია",
               "პროსტატიტი",
-              "ეროზიები",
-              "კისტები",
               "სახისა და სხეულის გაახალგაზრდავება",
               "ქრონიკული და მწვავე ტკივილებისგან გათავისუფლება",
               "საერთო განწყობისა და შრომისუნარიანობის გაუმჯობესება",
+              "მხედველობის და სმენის აღდგენა",
             ].map((condition, index) => (
               <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
                 <p className="text-emerald-dark flex items-start gap-2">
@@ -826,7 +815,7 @@ export default function Home() {
             </div>
 
             {/* Featured Large Image */}
-            <div className="mb-6 rounded-3xl overflow-hidden shadow-2xl hover-lift group">
+            <div className="rounded-3xl overflow-hidden shadow-2xl hover-lift group">
               <div className="relative aspect-[21/9]">
                 <Image src="/IMG_8262.jpg" alt="გამაჯანსაღებელი კურსი" width={1200} height={500} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
@@ -835,45 +824,19 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Grid of smaller images */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {[
-                { src: "/IMG_6743.jpg", label: "ჯგუფური სავარჯიშოები" },
-                { src: "/IMG_6744.jpg", label: "პრაქტიკული მუშაობა" },
-                { src: "/IMG_6745.jpg", label: "ინდივიდუალური სესიები" },
-                { src: "/IMG_6746.jpg", label: "მედიტაცია" },
-                { src: "/IMG_6747.jpg", label: "ენერგეტიკული პრაქტიკა" },
-              ].map((item, index) => (
-                <div key={index} className="group relative rounded-2xl overflow-hidden shadow-lg hover-lift">
-                  <div className="aspect-square relative">
-                    <Image
-                      src={item.src}
-                      alt={item.label}
-                      width={300}
-                      height={300}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                      <p className="text-white text-sm font-semibold">{item.label}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
             {/* Stats Bar */}
-            <div className="mt-12 grid grid-cols-3 gap-6 bg-white rounded-2xl p-8 shadow-lg">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-dark mb-1">500+</div>
-                <div className="text-gray-600 text-sm">კურსდამთავრებული</div>
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+              <div className="text-center py-4 sm:py-0">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">500+</div>
+                <div className="text-gray-600 text-sm md:text-base">კურსდამთავრებული</div>
               </div>
-              <div className="text-center border-x border-gray-200">
-                <div className="text-3xl font-bold text-emerald-dark mb-1">98%</div>
-                <div className="text-gray-600 text-sm">კმაყოფილების მაჩვენებელი</div>
+              <div className="text-center py-4 sm:py-0 border-y sm:border-y-0 sm:border-x border-gray-200">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">98%</div>
+                <div className="text-gray-600 text-sm md:text-base">კმაყოფილების მაჩვენებელი</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-dark mb-1">15+</div>
-                <div className="text-gray-600 text-sm">წლიანი გამოცდილება</div>
+              <div className="text-center py-4 sm:py-0">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">15+</div>
+                <div className="text-gray-600 text-sm md:text-base">წლიანი გამოცდილება</div>
               </div>
             </div>
           </div>
