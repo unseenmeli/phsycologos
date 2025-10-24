@@ -262,7 +262,7 @@ export default function Home() {
             </ScrollAnimation>
             <div className="pt-8">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+                href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-4 bg-gold hover:bg-gold-light text-emerald-dark px-16 py-8 rounded-full text-2xl font-black shadow-2xl transition-all transform hover:scale-110"
@@ -531,7 +531,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+              href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-gradient-to-r from-emerald-dark to-emerald-medium text-white px-12 py-6 rounded-full text-xl font-black shadow-2xl transition-all hover:scale-105"
@@ -620,7 +620,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+              href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-gradient-to-r from-emerald-dark to-emerald-medium text-white px-12 py-6 rounded-full text-xl font-black shadow-2xl transition-all hover:scale-105"
@@ -666,7 +666,7 @@ export default function Home() {
               შედეგები პირველივე დღიდან იწყება!
             </p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+              href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-gold text-emerald-dark px-12 py-6 rounded-full text-xl font-black shadow-2xl transition-all hover:scale-105"
