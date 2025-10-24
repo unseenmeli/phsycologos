@@ -39,23 +39,38 @@ export default function Home() {
 
           {/* Mobile Navigation Links */}
           <div className="md:hidden mt-2 flex justify-around border-t border-gold/20 pt-2 gap-1">
-            <a href="#about" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+            <a
+              href="#about"
+              className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium"
+            >
               შესახებ
             </a>
-            <a href="#course" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+            <a
+              href="#course"
+              className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium"
+            >
               ვისთვის
             </a>
-            <a href="#results" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+            <a
+              href="#results"
+              className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium"
+            >
               შედეგები
             </a>
-            <a href="#packages" className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium">
+            <a
+              href="#packages"
+              className="text-[10px] font-semibold text-emerald-dark hover:text-emerald-medium"
+            >
               პაკეტები
             </a>
           </div>
 
           {/* Desktop Layout */}
           <div className="hidden md:flex items-center justify-between relative">
-            <a href="#" className="flex items-center gap-4 relative group transition-transform duration-300 hover:scale-105">
+            <a
+              href="#"
+              className="flex items-center gap-4 relative group transition-transform duration-300 hover:scale-105"
+            >
               <div className="absolute -top-4 left-0 shadow-2xl z-50">
                 <Image
                   src="/logo.jpeg"
@@ -164,12 +179,20 @@ export default function Home() {
               </div>
               {/* Stats */}
               <div className="absolute -top-4 right-4 md:right-2 lg:-right-4 md:top-6 lg:top-12 bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-3 md:p-4 lg:p-6 text-center animate-fade-in-up delay-300 hover-lift border-2 border-white/60">
-                <div className="text-lg md:text-2xl lg:text-3xl font-black text-emerald-dark leading-tight">10 000 000+</div>
-                <div className="text-[10px] md:text-xs lg:text-sm text-gray-600 font-semibold mt-1">კურსდამთავრებული</div>
+                <div className="text-lg md:text-2xl lg:text-3xl font-black text-emerald-dark leading-tight">
+                  10 000 000+
+                </div>
+                <div className="text-[10px] md:text-xs lg:text-sm text-gray-600 font-semibold mt-1">
+                  კურსდამთავრებული
+                </div>
               </div>
               <div className="absolute -bottom-4 left-4 md:left-2 lg:-left-4 md:bottom-6 lg:bottom-12 bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-2 md:p-4 lg:p-6 text-center animate-fade-in-up delay-400 hover-lift border-2 border-white/60">
-                <div className="text-xl md:text-3xl lg:text-4xl font-black text-emerald-dark leading-none">40</div>
-                <div className="text-[9px] md:text-xs lg:text-sm text-gray-600 font-semibold mt-0.5 md:mt-1">დღიანი პროგრამა</div>
+                <div className="text-xl md:text-3xl lg:text-4xl font-black text-emerald-dark leading-none">
+                  40
+                </div>
+                <div className="text-[9px] md:text-xs lg:text-sm text-gray-600 font-semibold mt-0.5 md:mt-1">
+                  დღიანი პროგრამა
+                </div>
               </div>
             </div>
           </div>
@@ -187,33 +210,34 @@ export default function Home() {
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 ნორბეკოვის მეთოდი - ასე ეწოდება ფსიქო სომატიკური თვითაღდგენის
-                სისტემას, რომლის ბაზაზეც დაფუძნებულია ჩვენი გამაჯანსაღებელი კურსი.
+                სისტემას, რომლის ბაზაზეც დაფუძნებულია ჩვენი გამაჯანსაღებელი
+                კურსი.
               </p>
             </div>
           </ScrollAnimation>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <ScrollAnimation animation="scale">
-              <div className="text-center p-8 bg-cream rounded-2xl hover-lift">
-                <div className="text-5xl font-bold text-emerald-dark mb-2">
-                  10მ+
+              <div className="text-center px-6 py-6 bg-cream rounded-2xl hover-lift h-full flex flex-col justify-center items-center">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-3 leading-tight whitespace-nowrap">
+                  10 000 000+
                 </div>
-                <div className="text-gray-600">კურსდამთავრებული მსოფლიოში</div>
+                <div className="text-sm md:text-base text-gray-600">კურსდამთავრებული მსოფლიოში</div>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale">
-              <div className="text-center p-8 bg-cream rounded-2xl hover-lift">
-                <div className="text-5xl font-bold text-emerald-dark mb-2">
+              <div className="text-center px-6 py-6 bg-cream rounded-2xl hover-lift h-full flex flex-col justify-center items-center">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-3 leading-tight whitespace-nowrap">
                   20+
                 </div>
-                <div className="text-gray-600">წლიანი გამოცდილება</div>
+                <div className="text-sm md:text-base text-gray-600">წლიანი გამოცდილება</div>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale">
-              <div className="text-center p-8 bg-cream rounded-2xl hover-lift">
-                <div className="text-5xl font-bold text-emerald-dark mb-2">
+              <div className="text-center px-6 py-6 bg-cream rounded-2xl hover-lift h-full flex flex-col justify-center items-center">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-3 leading-tight whitespace-nowrap">
                   40
                 </div>
-                <div className="text-gray-600">ენაზე ნათარგმნი</div>
+                <div className="text-sm md:text-base text-gray-600">ენაზე ნათარგმნი</div>
               </div>
             </ScrollAnimation>
           </div>
@@ -275,7 +299,10 @@ export default function Home() {
       </section>
 
       {/* Why Course - HERO VALUE PROPOSITION */}
-      <section id="about" className="py-32 px-6 bg-gradient-to-br from-emerald-dark via-emerald-medium to-emerald-dark text-white relative overflow-hidden">
+      <section
+        id="about"
+        className="py-32 px-6 bg-gradient-to-br from-emerald-dark via-emerald-medium to-emerald-dark text-white relative overflow-hidden"
+      >
         {/* Decorative background elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-gold rounded-full blur-3xl"></div>
@@ -285,20 +312,28 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl relative z-10">
           {/* Header */}
           <div className="text-center mb-20 animate-fade-in-up">
-            <p className="text-gold text-sm uppercase tracking-widest mb-4 font-semibold">სისტემის საფუძველი</p>
+            <p className="text-gold text-sm uppercase tracking-widest mb-4 font-semibold">
+              სისტემის საფუძველი
+            </p>
             <h2 className="text-2xl md:text-4xl lg:text-6xl font-black mb-8 leading-tight">
               რატომ „გამაჯანსაღებელი კურსი"?
             </h2>
             <div className="w-32 h-1 bg-gold mx-auto mb-8"></div>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-              საყოველთაოდ ცნობილი ფაქტია, რომ ქრონიკული დაავადებების და სიმბტომების წარმოშობის მიზეზი უმეტეს შემთხვევაში ფსიქო სომატიკურია, რაც ფსიქოლოგიური მიდგომებისა და სტრესის განეიტრალების გარეშე ძალზე ართულებს გამოჯანმრთელების პროცესს.
+              საყოველთაოდ ცნობილი ფაქტია, რომ ქრონიკული დაავადებების და
+              სიმბტომების წარმოშობის მიზეზი უმეტეს შემთხვევაში ფსიქო
+              სომატიკურია, რაც ფსიქოლოგიური მიდგომებისა და სტრესის განეიტრალების
+              გარეშე ძალზე ართულებს გამოჯანმრთელების პროცესს.
             </p>
           </div>
 
           {/* Key Message */}
           <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-12 mb-16 border-2 border-white/20 animate-scale-in delay-200">
             <p className="text-2xl lg:text-3xl text-center leading-relaxed font-light">
-              გამაჯანსაღებელ კურსზე ჩვენ გამოვიყენებთ <span className="font-bold text-gold">10 განსხვავებულ გზას</span>, რათა გავაუმჯობესოთ თვითაღდგენის მექანიზმი და გავაღვიძოთ ჩვენი განუსაზღვრელი შესაძლებლობები
+              გამაჯანსაღებელ კურსზე ჩვენ გამოვიყენებთ{" "}
+              <span className="font-bold text-gold">10 განსხვავებულ გზას</span>,
+              რათა გავაუმჯობესოთ თვითაღდგენის მექანიზმი და გავაღვიძოთ ჩვენი
+              განუსაზღვრელი შესაძლებლობები
             </p>
           </div>
 
@@ -308,52 +343,52 @@ export default function Home() {
               {
                 number: "01",
                 title: "ყურადღების კონცენტრაციის სავარჯიშოები",
-                desc: "გააძლიერე გონების ფოკუსირების უნარი"
+                desc: "გააძლიერე გონების ფოკუსირების უნარი",
               },
               {
                 number: "02",
                 title: "ფიზიკური ვარჯიში ენერგიის გაათმაგების ეფექტით",
-                desc: "გაზარდე სხეულის ენერგეტიკული რესურსები"
+                desc: "გაზარდე სხეულის ენერგეტიკული რესურსები",
               },
               {
                 number: "03",
                 title: "მედიტაციური სავარჯიშოები",
-                desc: "მიაღწიე შინაგან სიმშვიდესა და ჰარმონიას"
+                desc: "მიაღწიე შინაგან სიმშვიდესა და ჰარმონიას",
               },
               {
                 number: "04",
                 title: "უძველესი აღმოსავლური პრაქტიკები",
-                desc: "ათასწლეული სიბრძნე თანამედროვე მეთოდებში"
+                desc: "ათასწლეული სიბრძნე თანამედროვე მეთოდებში",
               },
               {
                 number: "05",
                 title: 'ყურადღების და "სიცივე-სითბოს" გადაადგილების ტექნიკები',
-                desc: "მართე შენი სხეულის ენერგეტიკული ნაკადები"
+                desc: "მართე შენი სხეულის ენერგეტიკული ნაკადები",
               },
               {
                 number: "06",
                 title: "პოზიტიური მეტყველების პრინციპები",
-                desc: "შეცვალე შენი რეალობა სწორი სიტყვებით"
+                desc: "შეცვალე შენი რეალობა სწორი სიტყვებით",
               },
               {
                 number: "07",
                 title: "ხასიათის თვისებებზე მუშაობის მეთოდოლოგია",
-                desc: "გახდი უკეთესი ვერსია შენი თავისა"
+                desc: "გახდი უკეთესი ვერსია შენი თავისა",
               },
               {
                 number: "08",
                 title: "ენერგეტიკული ოქტავა",
-                desc: "აამაღლე შენი ვიბრაციის დონე"
+                desc: "აამაღლე შენი ვიბრაციის დონე",
               },
               {
                 number: "09",
                 title: "სტრესის განეიტრალების და გარდაქმის ტექნიკები",
-                desc: "გარდაქმენი ნეგატივი პოზიტიურ ენერგიად"
+                desc: "გარდაქმენი ნეგატივი პოზიტიურ ენერგიად",
               },
               {
                 number: "10",
                 title: "შედეგების ფიქსირების ტექნიკა",
-                desc: "დაჩქარებული შესწავლის მეთოდოლოგია"
+                desc: "დაჩქარებული შესწავლის მეთოდოლოგია",
               },
             ].map((item, index) => (
               <div
@@ -418,31 +453,31 @@ export default function Home() {
             </ScrollAnimation>
             <ScrollAnimation animation="right">
               <div className="space-y-4 text-gray-700">
-              <p>
-                აკადემიკოსი მირზაკარიმ ნორბეკოვი დღესდღეობით რამდენიმე
-                მიმართულებითაა ცნობილი. პირველ რიგში, ის ფსიქოსომატიკური
-                თვითრეგულაციის ანუ ე.წ. ნორბეკოვის სისტემის შემქმნელი გახლავთ.
-                ეს არის ის ფსიქოლოგიური მიდგომები, რომელიც მან საკუთარ თავზე
-                გამოსცადა და ფაქტობრივად, განუკურნებელი დაავადებისგან განიკურნა.
-                განკურნების შემდეგ მან ეს მეთოდები ერთ მთლიან სისტემად აქცია,
-                რომლის შექმნაც 40 წლის წინ დაიწყო. უკვე 20-25 წელია, რაც
-                ნორბეკოვის სისტემას მთელი მსოფლიო იცნობს.
-              </p>
-              <p>
-                სხვაგვარად რომ ვთქვათ, ეს საკუთარ თავზე მუშაობისა და პიროვნული
-                ზრდის სისტემაა.
-              </p>
-              <p>
-                გარდა ამ სისტემისა, ნორბეკოვი მისი წიგნებითაც ცნობილია. მისი
-                ავტორობით, გამოქვეყნდა არა ერთი წიგნი-ტრენინგი, რომელიც
-                დაწერილია მარტივი, პოპულარული ენით და თან, გარკვეულ ფსიქოლოგიურ
-                შიგთავსს მოიცავს. ოცი წლის წინ, მისმა წიგნმა, რომელსაც „სულელის
-                გამოცდილება" ჰქვია, რეკორდი მოხსნა.
-              </p>
-              <p className="font-semibold">
-                ამ წიგნის ტირაჟი დღეს 40 მილიონია და ნათარგმნია, ფაქტობრივად,
-                მსოფლიოს ყველა ენაზე, მათ შორის, ქართულად.
-              </p>
+                <p>
+                  აკადემიკოსი მირზაკარიმ ნორბეკოვი დღესდღეობით რამდენიმე
+                  მიმართულებითაა ცნობილი. პირველ რიგში, ის ფსიქოსომატიკური
+                  თვითრეგულაციის ანუ ე.წ. ნორბეკოვის სისტემის შემქმნელი გახლავთ.
+                  ეს არის ის ფსიქოლოგიური მიდგომები, რომელიც მან საკუთარ თავზე
+                  გამოსცადა და ფაქტობრივად, განუკურნებელი დაავადებისგან
+                  განიკურნა. განკურნების შემდეგ მან ეს მეთოდები ერთ მთლიან
+                  სისტემად აქცია, რომლის შექმნაც 40 წლის წინ დაიწყო. უკვე 20-25
+                  წელია, რაც ნორბეკოვის სისტემას მთელი მსოფლიო იცნობს.
+                </p>
+                <p>
+                  სხვაგვარად რომ ვთქვათ, ეს საკუთარ თავზე მუშაობისა და პიროვნული
+                  ზრდის სისტემაა.
+                </p>
+                <p>
+                  გარდა ამ სისტემისა, ნორბეკოვი მისი წიგნებითაც ცნობილია. მისი
+                  ავტორობით, გამოქვეყნდა არა ერთი წიგნი-ტრენინგი, რომელიც
+                  დაწერილია მარტივი, პოპულარული ენით და თან, გარკვეულ
+                  ფსიქოლოგიურ შიგთავსს მოიცავს. ოცი წლის წინ, მისმა წიგნმა,
+                  რომელსაც „სულელის გამოცდილება" ჰქვია, რეკორდი მოხსნა.
+                </p>
+                <p className="font-semibold">
+                  ამ წიგნის ტირაჟი დღეს 40 მილიონია და ნათარგმნია, ფაქტობრივად,
+                  მსოფლიოს ყველა ენაზე, მათ შორის, ქართულად.
+                </p>
               </div>
             </ScrollAnimation>
           </div>
@@ -455,35 +490,43 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollAnimation animation="left">
               <div className="space-y-4 text-gray-700">
-              <p>
-                <span className="font-bold">ხათუნა მუზაშვილი</span> - ფსიქოლოგი,
-                ნლპ პრაქტიკოსი, არტ თერაპევტი, სხეულზე ორიენტირებული თერაპიის
-                სპეციალისტი, ნორბეკოვის სისტემის ქართულენოვანი ტრენერი, რომელმაც
-                გამაჯანსაღებელი სისტემა საქართველოში შემოიტანა.
-              </p>
-              <p>
-                ოდესღაც მისი ისტორიაც „გამაჯანსაღებელი კურსით" დაიწყო, როდესაც
-                მან ქრონიკული დაავადებებით დატრვირთულმა შეაბიჯა ნორბეკოვის
-                სისტემის კურსდამთავრებულთა რიგებში და სრულად მოახერხა თავისი,
-                როგორც ფიზიკური, აგრეთვე მენტალური ჯანმრთელობის აღდგენა.
-              </p>
-              <p className="font-semibold">
-                ხათუნა მუზაშვილი 20 წელზე მეტია ატარებს ტრენინგებს, როგორც
-                საქართველოში ასევე მის ფარგლებს გარეთ და უამრავ ადამიანს
-                ეხმარება ცხოვრების ბალანსის აღდგენასა და გამოჯანმრთელებაში.
-              </p>
+                <p>
+                  <span className="font-bold">ხათუნა მუზაშვილი</span> -
+                  ფსიქოლოგი, ნლპ პრაქტიკოსი, არტ თერაპევტი, სხეულზე
+                  ორიენტირებული თერაპიის სპეციალისტი, ნორბეკოვის სისტემის
+                  ქართულენოვანი ტრენერი, რომელმაც გამაჯანსაღებელი სისტემა
+                  საქართველოში შემოიტანა.
+                </p>
+                <p>
+                  ოდესღაც მისი ისტორიაც „გამაჯანსაღებელი კურსით" დაიწყო, როდესაც
+                  მან ქრონიკული დაავადებებით დატრვირთულმა შეაბიჯა ნორბეკოვის
+                  სისტემის კურსდამთავრებულთა რიგებში და სრულად მოახერხა თავისი,
+                  როგორც ფიზიკური, აგრეთვე მენტალური ჯანმრთელობის აღდგენა.
+                </p>
+                <p className="font-semibold">
+                  ხათუნა მუზაშვილი 20 წელზე მეტია ატარებს ტრენინგებს, როგორც
+                  საქართველოში ასევე მის ფარგლებს გარეთ და უამრავ ადამიანს
+                  ეხმარება ცხოვრების ბალანსის აღდგენასა და გამოჯანმრთელებაში.
+                </p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="right">
-              <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl">
-                <Image
-                  src="/xatunamuzashvili.jpeg"
-                  alt="ხათუნა მუზაშვილი"
-                  width={600}
-                  height={600}
-                  className="object-cover w-full h-full aspect-square"
-                />
-              </div>
+              <a
+                href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer group"
+              >
+                <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl transition-all duration-300 group-hover:shadow-3xl group-hover:scale-105">
+                  <Image
+                    src="/xatunamuzashvili.jpeg"
+                    alt="ხათუნა მუზაშვილი"
+                    width={600}
+                    height={600}
+                    className="object-cover w-full h-full aspect-square"
+                  />
+                </div>
+              </a>
             </ScrollAnimation>
           </div>
           <div className="text-center mt-12">
@@ -511,26 +554,44 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              ჩვენი საზოგადოება მოიცავს ყველა ასაკისა და პროფესიის ადამიანებს, რომლებიც ერთად აღმოაჩენენ თვითგანვითარების გზას
+              ჩვენი საზოგადოება მოიცავს ყველა ასაკისა და პროფესიის ადამიანებს,
+              რომლებიც ერთად აღმოაჩენენ თვითგანვითარების გზას
             </p>
           </div>
 
           {/* Testimonial Style Gallery */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="relative group rounded-3xl overflow-hidden shadow-xl hover-lift">
-              <Image src="/IMG_4929.jpg" alt="ჯგუფური პრაქტიკა" width={600} height={400} className="w-full h-80 object-cover transition-transform duration-700 scale-150" style={{ objectPosition: "70% 60%" }} />
+              <Image
+                src="/IMG_4929.jpg"
+                alt="ჯგუფური პრაქტიკა"
+                width={600}
+                height={400}
+                className="w-full h-80 object-cover transition-transform duration-700 scale-150"
+                style={{ objectPosition: "70% 60%" }}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark via-emerald-dark/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="text-white text-2xl font-bold mb-2">ჯგუფური პრაქტიკა</h3>
+                  <h3 className="text-white text-2xl font-bold mb-2">
+                    ჯგუფური პრაქტიკა
+                  </h3>
                   <p className="text-white/90">ერთად ვაღწევთ უკეთეს შედეგებს</p>
                 </div>
               </div>
             </div>
             <div className="relative group rounded-3xl overflow-hidden shadow-xl hover-lift">
-              <Image src="/IMG_5576.jpg" alt="პრაქტიკული სავარჯიშოები" width={600} height={400} className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+              <Image
+                src="/IMG_5576.jpg"
+                alt="პრაქტიკული სავარჯიშოები"
+                width={600}
+                height={400}
+                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark via-emerald-dark/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="text-white text-2xl font-bold mb-2">პრაქტიკული სავარჯიშოები</h3>
+                  <h3 className="text-white text-2xl font-bold mb-2">
+                    პრაქტიკული სავარჯიშოები
+                  </h3>
                   <p className="text-white/90">თეორია ქმნის პრაქტიკაში</p>
                 </div>
               </div>
@@ -559,7 +620,9 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-gradient-to-r from-emerald-dark to-emerald-medium text-white px-12 py-6 rounded-full text-xl font-black shadow-2xl transition-all hover:scale-105"
             >
               <span>დარეგისტრირდი მასტერკლასზე — ადგილები სწრაფად ივსება</span>
@@ -603,7 +666,9 @@ export default function Home() {
               შედეგები პირველივე დღიდან იწყება!
             </p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-gold text-emerald-dark px-12 py-6 rounded-full text-xl font-black shadow-2xl transition-all hover:scale-105"
             >
               <span>დარეგისტრირდი მასტერკლასზე</span>
@@ -805,12 +870,12 @@ export default function Home() {
               <span className="font-bold">დაწყება:</span> 10 ნოემბერი
             </p>
             <p>
-              <span className="font-bold">მისამართი:</span> სულხან ნასიძის 20
-              – ფსიქოლოგოსი
+              <span className="font-bold">მისამართი:</span> სულხან ნასიძის 20 –
+              ფსიქოლოგოსი
             </p>
             <p>
-              <span className="font-bold">დამატებითი ინფორმაცია:</span> 595
-              281 855 | 555 658 865
+              <span className="font-bold">დამატებითი ინფორმაცია:</span> 595 281
+              855 | 555 658 865
             </p>
             <p className="text-2xl font-bold text-emerald-dark pt-6">
               გააღვიძე შენი სხეულის და გონების თვითგანკურნების მექანიზმი.
@@ -821,7 +886,9 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-emerald-dark hover:bg-emerald-medium text-white px-12 py-6 rounded-full text-xl font-semibold transition-all"
             >
               <span>დარეგისტრირდი</span>
@@ -830,21 +897,32 @@ export default function Home() {
           {/* Experience Gallery Section */}
           <div className="mt-20 bg-gradient-to-br from-cream to-white rounded-3xl p-12 shadow-2xl">
             <div className="text-center mb-12">
-              <p className="text-emerald-medium text-sm uppercase tracking-widest mb-3 font-semibold">ჩვენი ატმოსფერო</p>
+              <p className="text-emerald-medium text-sm uppercase tracking-widest mb-3 font-semibold">
+                ჩვენი ატმოსფერო
+              </p>
               <h3 className="text-4xl font-bold text-emerald-dark mb-4">
                 ნახე როგორ გამოიყურება ტრენინგები
               </h3>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                რეალური ადამიანები, რეალური გარდაქმნები. ეს არის თქვენი მომავალი საზოგადოება.
+                რეალური ადამიანები, რეალური გარდაქმნები. ეს არის თქვენი მომავალი
+                საზოგადოება.
               </p>
             </div>
 
             {/* Featured Large Image */}
             <div className="rounded-3xl overflow-hidden shadow-2xl hover-lift group">
               <div className="relative aspect-[21/9]">
-                <Image src="/IMG_8262.jpg" alt="გამაჯანსაღებელი კურსი" width={1200} height={500} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image
+                  src="/IMG_8262.jpg"
+                  alt="გამაჯანსაღებელი კურსი"
+                  width={1200}
+                  height={500}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                  <p className="text-white text-xl font-semibold">მთავარი სესია - სრული ჩართულობა</p>
+                  <p className="text-white text-xl font-semibold">
+                    მთავარი სესია - სრული ჩართულობა
+                  </p>
                 </div>
               </div>
             </div>
@@ -852,16 +930,28 @@ export default function Home() {
             {/* Stats Bar */}
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
               <div className="text-center py-4 sm:py-0">
-                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">500+</div>
-                <div className="text-gray-600 text-sm md:text-base">კურსდამთავრებული</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">
+                  500+
+                </div>
+                <div className="text-gray-600 text-sm md:text-base">
+                  კურსდამთავრებული
+                </div>
               </div>
               <div className="text-center py-4 sm:py-0 border-y sm:border-y-0 sm:border-x border-gray-200">
-                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">98%</div>
-                <div className="text-gray-600 text-sm md:text-base">კმაყოფილების მაჩვენებელი</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">
+                  98%
+                </div>
+                <div className="text-gray-600 text-sm md:text-base">
+                  კმაყოფილების მაჩვენებელი
+                </div>
               </div>
               <div className="text-center py-4 sm:py-0">
-                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">15+</div>
-                <div className="text-gray-600 text-sm md:text-base">წლიანი გამოცდილება</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">
+                  15+
+                </div>
+                <div className="text-gray-600 text-sm md:text-base">
+                  წლიანი გამოცდილება
+                </div>
               </div>
             </div>
           </div>
@@ -881,8 +971,8 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Masterclass */}
-            <div className="group bg-white rounded-3xl p-10 border-2 border-gray-200 hover:border-gold hover-lift">
-              <div className="text-center space-y-6">
+            <div className="group bg-white rounded-3xl p-10 border-2 border-gray-200 hover:border-gold hover-lift flex flex-col">
+              <div className="text-center space-y-6 flex-grow">
                 <h3 className="text-2xl font-black text-emerald-dark">
                   ჯანმრთელობის მასტერკლასი
                 </h3>
@@ -902,18 +992,20 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit" target="_blank" rel="noopener noreferrer"
-                  className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-4 rounded-full font-semibold transition-all"
-                >
-                  დარეგისტრირდი მასტერკლასზე
-                </a>
               </div>
+              <a
+                href="https://docs.google.com/forms/d/1w_akEuJvjDYrEHGiHUx0OJ4ud_wQZHMj6DE9YHJf06A/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-4 rounded-full font-semibold transition-all mt-6"
+              >
+                დარეგისტრირდი მასტერკლასზე
+              </a>
             </div>
 
             {/* Online */}
-            <div className="group bg-white rounded-3xl p-10 border-2 border-gray-200 hover:border-gold hover-lift">
-              <div className="text-center space-y-6">
+            <div className="group bg-white rounded-3xl p-10 border-2 border-gray-200 hover:border-gold hover-lift flex flex-col">
+              <div className="text-center space-y-6 flex-grow">
                 <h3 className="text-2xl font-black text-emerald-dark">
                   გამაჯანსაღებელი კურსი
                 </h3>
@@ -932,18 +1024,20 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
-                  className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-4 rounded-full font-semibold transition-all"
-                >
-                  დაჯავშნე შენი ადგილი დღესვე
-                </a>
               </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-4 rounded-full font-semibold transition-all mt-6"
+              >
+                დაჯავშნე შენი ადგილი დღესვე
+              </a>
             </div>
 
             {/* Standard */}
-            <div className="group relative bg-gradient-to-br from-gold/20 via-gold/10 to-gold/20 rounded-3xl p-10 border-4 border-gold hover-lift">
-              <div className="text-center space-y-6">
+            <div className="group relative bg-gradient-to-br from-gold/20 via-gold/10 to-gold/20 rounded-3xl p-10 border-4 border-gold hover-lift flex flex-col">
+              <div className="text-center space-y-6 flex-grow">
                 <h3 className="text-2xl font-black text-emerald-dark">
                   გამაჯანსაღებელი კურსი
                 </h3>
@@ -964,18 +1058,20 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
-                  className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-5 rounded-full font-semibold transition-all text-lg"
-                >
-                  დაჯავშნე შენი ადგილი დღესვე
-                </a>
               </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-emerald-dark hover:bg-emerald-medium text-white text-center px-8 py-4 rounded-full font-semibold transition-all mt-6"
+              >
+                დაჯავშნე შენი ადგილი დღესვე
+              </a>
             </div>
 
             {/* VIP */}
-            <div className="group bg-gradient-to-br from-emerald-dark via-emerald-medium to-emerald-dark text-white rounded-3xl p-10 border-4 border-gold relative overflow-hidden hover-lift">
-              <div className="text-center space-y-6 relative z-10">
+            <div className="group bg-gradient-to-br from-emerald-dark via-emerald-medium to-emerald-dark text-white rounded-3xl p-10 border-4 border-gold relative overflow-hidden hover-lift flex flex-col">
+              <div className="text-center space-y-6 relative z-10 flex-grow">
                 <h3 className="text-2xl font-black">გამაჯანსაღებელი კურსი</h3>
                 <p className="font-bold">VIP ფორმატი</p>
                 <div>
@@ -994,13 +1090,15 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform" target="_blank" rel="noopener noreferrer"
-                  className="block w-full bg-gold hover:bg-gold-light text-emerald-dark text-center px-8 py-5 rounded-full font-semibold transition-all text-lg"
-                >
-                  დაჯავშნე შენი ადგილი დღესვე
-                </a>
               </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSedu3wdDuFmHXNg9smszm9NXq7QPrKGyONSgriGGcwOXeJqww/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gold hover:bg-gold-light text-emerald-dark text-center px-8 py-4 rounded-full font-semibold transition-all mt-6 relative z-10"
+              >
+                დაჯავშნე შენი ადგილი დღესვე
+              </a>
             </div>
           </div>
           <div className="text-center mt-12">
