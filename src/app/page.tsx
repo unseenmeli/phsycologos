@@ -931,26 +931,26 @@ export default function Home() {
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
               <div className="text-center py-4 sm:py-0">
                 <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">
-                  500+
+                  10 000 000+
                 </div>
                 <div className="text-gray-600 text-sm md:text-base">
-                  კურსდამთავრებული
+                  კურსდამთავრებული მსოფლიოში
                 </div>
               </div>
               <div className="text-center py-4 sm:py-0 border-y sm:border-y-0 sm:border-x border-gray-200">
                 <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">
-                  98%
+                  20+
                 </div>
                 <div className="text-gray-600 text-sm md:text-base">
-                  კმაყოფილების მაჩვენებელი
+                  წლიანი გამოცდილება
                 </div>
               </div>
               <div className="text-center py-4 sm:py-0">
                 <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-1">
-                  15+
+                  40
                 </div>
                 <div className="text-gray-600 text-sm md:text-base">
-                  წლიანი გამოცდილება
+                  ენაზე ნათარგმნი
                 </div>
               </div>
             </div>
