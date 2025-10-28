@@ -221,7 +221,9 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-3 leading-tight whitespace-nowrap">
                   10 000 000+
                 </div>
-                <div className="text-sm md:text-base text-gray-600">კურსდამთავრებული მსოფლიოში</div>
+                <div className="text-sm md:text-base text-gray-600">
+                  კურსდამთავრებული მსოფლიოში
+                </div>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale">
@@ -229,7 +231,9 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-3 leading-tight whitespace-nowrap">
                   20+
                 </div>
-                <div className="text-sm md:text-base text-gray-600">წლიანი გამოცდილება</div>
+                <div className="text-sm md:text-base text-gray-600">
+                  წლიანი გამოცდილება
+                </div>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale">
@@ -237,7 +241,9 @@ export default function Home() {
                 <div className="text-3xl md:text-4xl font-bold text-emerald-dark mb-3 leading-tight whitespace-nowrap">
                   40
                 </div>
-                <div className="text-sm md:text-base text-gray-600">ენაზე ნათარგმნი</div>
+                <div className="text-sm md:text-base text-gray-600">
+                  ენაზე ნათარგმნი
+                </div>
               </div>
             </ScrollAnimation>
           </div>
@@ -519,11 +525,11 @@ export default function Home() {
               >
                 <div className="rounded-full overflow-hidden border-8 border-white shadow-2xl transition-all duration-300 group-hover:shadow-3xl group-hover:scale-105">
                   <Image
-                    src="/xatunamuzashvili.jpeg"
+                    src="/xatunamuzashvili.jpg"
                     alt="ხათუნა მუზაშვილი"
-                    width={600}
-                    height={600}
-                    className="object-cover w-full h-full aspect-square"
+                    width={3200}
+                    height={3200}
+                    className=""
                   />
                 </div>
               </a>
